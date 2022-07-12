@@ -1,0 +1,8 @@
+
+pickaxe , rope , money
+
+broken wood
+money , boots , key
+bread , torch
+supplies , money
+apple

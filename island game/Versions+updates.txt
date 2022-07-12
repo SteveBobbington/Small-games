@@ -1,0 +1,284 @@
+Beta V.1.0:
+
+Added locations
+
+Created "go" function to move from different places
+
+Added location inventories
+
+
+
+Beta V.1.1:
+
+Created "action" function to run different commands
+
+Created "take" function to take items from different places
+
+Added player inventory
+
+
+
+Beta V.1.2:
+
+Added "menu" and introduction
+
+Created "read_locations" function to return a list of locations in the game for the introduction
+
+Created "read_inventory" function to return what is in inventory
+
+
+
+Beta V.1.3:
+
+Created "playerLocationNum" function to return a number corresponding to the player's location
+
+Added "new_game" function to clear player's inventory to replace items from location inventories
+
+
+
+Beta V1.3.1:
+
+Changed file formatting to be easily readable
+
+Chnaged how user inputs are read
+
+
+
+Beta V1.3.2:
+
+Added "readAllFromInv" and "writeAllFromInv" functions to read from and to inventories easier
+
+
+
+Beta V.1.3.3:
+
+Added "whatsHere" and "read_inventory_of_locations" functions to return what is in a particular location
+
+
+
+Beta V.1.3.4:
+
+Optimised "take" function to use new functions and user inputs
+
+
+
+Beta V.1.4:
+
+Added "leave" function to leave an item (but not onto an actuall location)
+
+Added "reset" function to more easily reset a files contents
+
+
+
+Beta V.1.4.1:
+
+Added chatches so user can't enter wrong values as much/easily
+
+
+
+Beta V.1.4.2:
+
+Changed "playerLocationNum" to "locationNumFunc" and made it work with all locations, rather than only the player's location
+
+
+
+Beta V.1.5:
+
+Optimised reading from inventory and changed inventory file formatting to work with this
+
+Removed "readAllFromInv" function
+
+Made "read_inventory" function work in more ways reducing unused functions
+
+
+
+Beta V.1.6:
+
+Limited movement to correspond to text displayed at start
+
+Changed go function to be more user friendly
+
+Added more outputs to user explained what as gone wrong if something unexpected happend when they type something wrong
+
+
+
+Beta V.1.7:
+
+Fixed bugs when taking and leaving items not properly moving to right place (except "leave" still not putting items into locations inventory)
+
+
+
+Beta V.2.0:
+
+Changed file formatting in all files
+
+Added "dictionary" to store all location's inventories
+
+Added "create_dictionary" function to convert file to dictionary to be used while program is running
+
+Added "quit" function to save game write contents of "dictionary" to file, and leave window
+
+
+
+Beta V.2.1.0:
+
+Changed "take" function to only take from an inventory your in
+
+
+
+Beta V.2.1.1:
+
+Changed "whatsHere" function to work with dictionary and reduced code
+
+Removed "read_inventory_of_locations" function and move code still needed into "whatsHere" function
+
+Removed various other small functions which are no longer needed
+
+
+
+Beta V.2.2:
+
+Changed "take" function to write to dictionary rather than file so it works with other code
+
+Changed "leave" function to work generally
+
+Finished (temporarily) "action" function with now completed (for now) "leave" and "take" functions
+
+
+
+Beta V.2.3:
+
+Added "town_member" to talk to you on your first visit to town
+
+Changed "leave" function to cope with leaving items outside location inventories
+
+Changed "dictionary" to be made more easily changeable so items can be deleted from it without extra functions
+
+
+
+Beta V.2.4:
+
+Added "goblin" in beach to talk to when you go to beach with supplies
+
+Added option to tell the truth and give goblin the supplies, or tell a lie and use "goblinFight" function, although ths currently does nothing
+
+
+
+Beta V.3.0:
+
+Added health, which starts at 100
+
+Added "market" function with contained "buy" and "sell" functions
+
+Added "market" dictionary to contain items to sell at a price of 1-3 money
+
+Added more money in village and mine, as well as the one already in town
+
+Created file called "items to buy" and created "read_market" function to put file contents into "market" dictionary
+
+
+
+Beta V.3.1.0:
+
+Started "goblinFight" function which will work like 'rock, paper, scissors' but have more of a chance to win for the player
+
+
+
+Beta V.3.1.1:
+
+Made the outcome of the fight change you health by different amounts
+
+Made the fight take place twice if you lied to the goblin
+
+Removed supplies if you lose the fight
+
+
+
+Beta V.3.1.2:
+
+Added "balance" function to return the number of "money" items in your inventory
+
+Added "healthCheck" to check if you have <1 health left
+
+
+
+Beta V.3.2:
+
+Added "attackInt" function to make the "goblinFight" function less repetitive and easier to run
+
+Started "buy" function, although it doesn't properly take the right amount of money, and the item from the market properly
+
+
+
+Beta V.3.3:
+
+Finished "buy" function
+
+Added proper items you can buy
+
+
+
+Beta V.3.4:
+
+Added "use" function to use items e.g. bandage to recover health, not yet very efficient as all items you can use will have to have a seperate if statement, making it difficult to use many items
+
+Fixed bugs when entering the shop again after buying something
+
+Fixed bug when items in inventory and market duplicate
+
+
+
+Beta V.3.4.1:
+
+Created "removeFromInv" function to more efficiently remove specific items from inventory any amount of times, also making removing money from inventory in "buy" function less time consuming and complicated
+
+
+
+Beta V.3.4.2:
+
+Changed "buy" function to work more effectively with "removeFromInv" and use less loops
+
+
+
+Beta V.3.5:
+
+Added "sell" function for all items in game
+
+Optimised "action" function
+
+Added more catches for incorrect user inputs
+
+
+
+Beta V.3.5.1:
+
+Changed how sections of ouputs are sent especially with time gaps
+
+Fixed "sell" function to give the right amount of money
+
+Made "sell" function add item back to market
+
+Added most comments onto code to be more readable
+
+
+
+
+ALPHA:
+
+COMING SOON:
+
+Complete reworks into how functions are run
+
+tkinter imported to add graphics to the game (only small graphics for now, but a lot more than text-based)
+
+User inputs to be changed to mouse click buttons etc.
+
+
+
+WARNING:
+For the start of alpha very few new feature will be added, but graphics will be implimented changing game-play completely!
+
+Feel free to continue to play beta until graphics are fully implimented.
+
+
+NOTE: This may take a while, so don't complain if no updates come out
